@@ -15,6 +15,10 @@
 		B542C4AA2A3908FA00C8C827 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = B542C4A92A3908FA00C8C827 /* Business.swift */; };
 		B542C4AC2A390BFF00C8C827 /* BusinessSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B542C4AB2A390BFF00C8C827 /* BusinessSearch.swift */; };
 		B542C4AF2A390F8500C8C827 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B542C4AE2A390F8500C8C827 /* Constants.swift */; };
+		B542C4B42A39AE3900C8C827 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B542C4B32A39AE3900C8C827 /* HomeView.swift */; };
+		B542C4B72A39B30700C8C827 /* BuisnessList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B542C4B62A39B30700C8C827 /* BuisnessList.swift */; };
+		B542C4B92A39B8F300C8C827 /* BusinessSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B542C4B82A39B8F300C8C827 /* BusinessSectionHeader.swift */; };
+		B542C4BB2A39BA0A00C8C827 /* BusinessSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B542C4BA2A39BA0A00C8C827 /* BusinessSection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +31,10 @@
 		B542C4A92A3908FA00C8C827 /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
 		B542C4AB2A390BFF00C8C827 /* BusinessSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSearch.swift; sourceTree = "<group>"; };
 		B542C4AE2A390F8500C8C827 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B542C4B32A39AE3900C8C827 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B542C4B62A39B30700C8C827 /* BuisnessList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuisnessList.swift; sourceTree = "<group>"; };
+		B542C4B82A39B8F300C8C827 /* BusinessSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSectionHeader.swift; sourceTree = "<group>"; };
+		B542C4BA2A39BA0A00C8C827 /* BusinessSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,9 @@
 			isa = PBXGroup;
 			children = (
 				B542C4982A386F0E00C8C827 /* LaunchView.swift */,
+				B542C4B22A39ADC900C8C827 /* Home */,
+				B542C4B12A39ADBE00C8C827 /* Denied */,
+				B542C4B02A39ADB500C8C827 /* Onboarding */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -109,6 +120,39 @@
 				B542C4AE2A390F8500C8C827 /* Constants.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B542C4B02A39ADB500C8C827 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		B542C4B12A39ADBE00C8C827 /* Denied */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Denied;
+			sourceTree = "<group>";
+		};
+		B542C4B22A39ADC900C8C827 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B542C4B52A39B2EE00C8C827 /* List */,
+				B542C4B32A39AE3900C8C827 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B542C4B52A39B2EE00C8C827 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				B542C4B62A39B30700C8C827 /* BuisnessList.swift */,
+				B542C4B82A39B8F300C8C827 /* BusinessSectionHeader.swift */,
+				B542C4BA2A39BA0A00C8C827 /* BusinessSection.swift */,
+			);
+			path = List;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,9 +226,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B542C4992A386F0E00C8C827 /* LaunchView.swift in Sources */,
+				B542C4B42A39AE3900C8C827 /* HomeView.swift in Sources */,
 				B542C4AA2A3908FA00C8C827 /* Business.swift in Sources */,
+				B542C4B92A39B8F300C8C827 /* BusinessSectionHeader.swift in Sources */,
 				B542C4972A386F0E00C8C827 /* CitySightsApp.swift in Sources */,
 				B542C4AC2A390BFF00C8C827 /* BusinessSearch.swift in Sources */,
+				B542C4B72A39B30700C8C827 /* BuisnessList.swift in Sources */,
+				B542C4BB2A39BA0A00C8C827 /* BusinessSection.swift in Sources */,
 				B542C4A82A38761D00C8C827 /* ContentModel.swift in Sources */,
 				B542C4AF2A390F8500C8C827 /* Constants.swift in Sources */,
 			);
