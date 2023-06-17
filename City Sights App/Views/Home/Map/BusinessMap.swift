@@ -11,6 +11,7 @@ import MapKit
 struct BusinessMap: UIViewRepresentable {
     
     @EnvironmentObject var model: ContentModel
+    @Binding var selectedBusiness: Business?
     
     var locations: [MKPointAnnotation] {
         
@@ -67,10 +68,16 @@ struct BusinessMap: UIViewRepresentable {
     // MARK: Coordinator class
     
     func makeCoordinator() -> Coordinator {
-        return Coordinator()
+        return Coordinator(map:self)
     }
     
     class Coordinator: NSObject, MKMapViewDelegate {
+        
+        var map: BusinessMap
+        
+        init(map: BusinessMap) {
+            self.map = map
+        }
         
         func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         
@@ -86,10 +93,10 @@ struct BusinessMap: UIViewRepresentable {
             if annotationView == nil {
                 
                 // Create an annotation view
-                let annotationView = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: Constants.annotationReuseId)
+                annotationView = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: Constants.annotationReuseId)
                 
-                annotationView.canShowCallout = true
-                annotationView.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
+                annotationView!.canShowCallout = true
+                annotationView!.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
             }
             else {
                 
@@ -103,5 +110,24 @@ struct BusinessMap: UIViewRepresentable {
             
         }
         
+        func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+            
+            // User tapped on the annotationview
+            
+            // Get the businbess object that this annotation represents
+            // Loop through business in the model and find a match
+            for business in map.model.restaurants + map.model.sights {
+                
+                if business.name == view.annotation?.title {
+                    
+                    // Set the selectedBusiness property to the business object
+                    map.selectedBusiness = business
+                    return
+                }
+
+            }
+
+        }
+    
     }
 }
