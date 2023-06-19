@@ -27,6 +27,8 @@
 		B5F129302A3F16070030568C /* DirectionsMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F1292F2A3F16070030568C /* DirectionsMap.swift */; };
 		B5F129322A3F83A60030568C /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F129312A3F83A60030568C /* OnboardingView.swift */; };
 		B5F129342A3F8CCE0030568C /* LocationDeniedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F129332A3F8CCE0030568C /* LocationDeniedView.swift */; };
+		B5F129372A4040DF0030568C /* YelpAtribution.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F129362A4040DF0030568C /* YelpAtribution.swift */; };
+		B5F129392A404BAE0030568C /* DashedDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F129382A404BAE0030568C /* DashedDivider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +53,8 @@
 		B5F1292F2A3F16070030568C /* DirectionsMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionsMap.swift; sourceTree = "<group>"; };
 		B5F129312A3F83A60030568C /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		B5F129332A3F8CCE0030568C /* LocationDeniedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDeniedView.swift; sourceTree = "<group>"; };
+		B5F129362A4040DF0030568C /* YelpAtribution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpAtribution.swift; sourceTree = "<group>"; };
+		B5F129382A404BAE0030568C /* DashedDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashedDivider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +135,7 @@
 		B542C4A62A386F6900C8C827 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B5F129352A4040BA0030568C /* Common */,
 				B542C4982A386F0E00C8C827 /* LaunchView.swift */,
 				B542C4B22A39ADC900C8C827 /* Home */,
 				B542C4B12A39ADBE00C8C827 /* Denied */,
@@ -193,6 +198,15 @@
 				B5F1292D2A3DC1B90030568C /* BusinessTitle.swift */,
 			);
 			path = Detail;
+			sourceTree = "<group>";
+		};
+		B5F129352A4040BA0030568C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B5F129362A4040DF0030568C /* YelpAtribution.swift */,
+				B5F129382A404BAE0030568C /* DashedDivider.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,7 +287,9 @@
 				B542C4B92A39B8F300C8C827 /* BusinessSectionHeader.swift in Sources */,
 				B5F129342A3F8CCE0030568C /* LocationDeniedView.swift in Sources */,
 				B542C4972A386F0E00C8C827 /* CitySightsApp.swift in Sources */,
+				B5F129372A4040DF0030568C /* YelpAtribution.swift in Sources */,
 				B542C4C02A3B01EB00C8C827 /* BusinessDetailView.swift in Sources */,
+				B5F129392A404BAE0030568C /* DashedDivider.swift in Sources */,
 				B542C4AC2A390BFF00C8C827 /* BusinessSearch.swift in Sources */,
 				B542C4B72A39B30700C8C827 /* BuisnessList.swift in Sources */,
 				B5F1292E2A3DC1B90030568C /* BusinessTitle.swift in Sources */,
@@ -411,6 +427,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"City Sights App/Preview Content\"";
+				DEVELOPMENT_TEAM = F43F5V3HNZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
@@ -420,6 +437,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -441,6 +459,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"City Sights App/Preview Content\"";
+				DEVELOPMENT_TEAM = F43F5V3HNZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
@@ -450,6 +469,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
